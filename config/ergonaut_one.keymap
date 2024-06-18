@@ -21,15 +21,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        game_layer_toggle {
+            bindings = <&tog 5>;
+            key-positions = <38 39>;
+        };
+    };
+
+    behaviors {
+        shift_del: shift_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&mt LGUI RBKT    &kp Q        &kp W        &kp E        &kp R            &kp T        &kp Y        &kp U           &kp I        &kp O    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A        &kp S        &kp D        &kp F            &kp G        &kp H        &kp J           &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS   &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C  &mt LS(V) V      &kp B        &kp N        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                                           &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
+&mt ESC RBKT     &kp Q        &kp W        &kp E        &kp R            &kp T        &kp Y       &kp U        &kp I      &kp O    &kp P      &kp LBKT
+&mt LCTRL GRAVE  &kp A        &kp S        &kp D        &kp F            &kp G        &kp H       &kp J        &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
+&mt LALT MINUS   &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V      &kp B        &kp N       &kp M        &kp COMMA  &kp DOT  &kp SLASH  &mt RALT BSLH
+                                           &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &shift_del  &lt 1 SPACE  &lt 4 DEL
             >;
         };
 
@@ -60,12 +80,21 @@
             >;
         };
 
+        hotcut_layer {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans     &trans  &trans  &trans  &trans
+            >;
+        };
+
         game_layer {
             bindings = <
-&trans  &trans  &kp W   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp S   &kp D   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp Q   &kp W   &kp E    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D    &kp F      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &trans  &trans  &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp TAB  &kp SPACE  &trans  &trans  &trans  &trans
             >;
         };
     };
