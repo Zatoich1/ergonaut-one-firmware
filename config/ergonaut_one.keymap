@@ -59,5 +59,14 @@
                                          &trans        &none         &trans        &none         &trans        &trans
             >;
         };
+
+        game_layer {
+            bindings = <
+&trans  &trans  &kp W   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S   &kp D   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
