@@ -72,7 +72,7 @@
         hotcut_layer {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(PSCRN))  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(S))      &trans  &trans  &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans             &trans  &trans  &trans
                               &trans     &trans     &trans  &trans  &trans  &trans
             >;
