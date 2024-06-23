@@ -44,8 +44,15 @@
         lang_zap: lang_zap {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp SLASH &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LEFT_ALT) &kp COMMA &kp LS(LEFT_ALT)>;
             label = "LANG_ZAP";
+        };
+
+        lang_dot: lang_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_ALT) &kp DOT &kp LS(LEFT_ALT)>;
+            label = "LANG_DOT";
         };
     };
 
@@ -74,7 +81,7 @@
             bindings = <
 &mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp INSERT  &kp PSCRN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CLCK
 &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT    &kp UP     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_DN       &kp PAGE_DOWN    &kp RALT
+&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_UP       &kp PAGE_DOWN    &kp RALT
                                              &trans     &trans     &trans        &trans        &trans      &trans
             >;
         };
@@ -90,9 +97,9 @@
 
         hotcut_layer {
             bindings = <
-&trans  &trans       &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(PSCRN))  &trans  &trans  &trans
-&trans  &kp LA(TAB)  &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(S))      &trans  &trans  &trans
-&trans  &kp LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &trans       &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(PSCRN))  &trans     &trans  &trans
+&trans  &kp LA(TAB)  &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(S))      &trans     &trans  &trans
+&trans  &kp LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &lang_zap          &lang_dot  &trans  &trans
                                 &trans     &trans     &trans  &trans  &trans  &trans
             >;
         };

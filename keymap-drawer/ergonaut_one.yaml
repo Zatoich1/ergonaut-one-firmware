@@ -119,7 +119,7 @@ layers:
   - Vol Down
   - Home
   - End
-  - Page Down
+  - Page Up
   - PAGE DOWN
   - Alt
   - {type: held}
@@ -204,8 +204,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lang_zap'
+  - '&lang_dot'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
