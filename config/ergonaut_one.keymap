@@ -28,6 +28,25 @@
             bindings = <&tog 5>;
             key-positions = <38 39>;
         };
+
+        ctrl+backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <39 40>;
+        };
+
+        lang_zap {
+            bindings = <&none>;
+            key-positions = <41 40>;
+        };
+    };
+
+    macros {
+        lang_zap: lang_zap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_ALT) &kp SLASH &kp LS(LEFT_ALT)>;
+            label = "LANG_ZAP";
+        };
     };
 
     keymap {
@@ -35,10 +54,10 @@
 
         default_layer {
             bindings = <
-&mt ESC RBKT     &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y            &kp U        &kp I      &kp O    &kp P      &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F            &kp G        &kp H            &kp J        &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N            &kp M        &kp COMMA  &kp DOT  &kp SLASH  &mt RALT BSLH
-                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt 1 BACKSPACE  &lt 4 SPACE  &lt 2 DEL
+&mt ESC RBKT     &kp Q  &kp W  &kp E        &kp R      &kp T        &kp Y            &kp U        &kp I               &kp O    &kp P      &kp LBKT
+&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F      &kp G        &kp H            &kp J        &kp K               &kp L    &kp SEMI   &mt RCTRL SQT
+&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V      &kp B        &kp N            &kp M        &kp COMMA           &kp DOT  &kp SLASH  &mt RALT BSLH
+                               &lt RSE TAB  &sk LSHFT  &lt LWR RET  &lt 1 BACKSPACE  &lt 4 SPACE  &lt 2 LS(LEFT_ALT)
             >;
         };
 
@@ -46,17 +65,17 @@
             bindings = <
 &mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp RALT
+&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp DELETE
                                   &trans    &trans    &trans     &trans     &trans    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &trans        &trans        &trans    &trans
+&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp INSERT  &kp PSCRN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CLCK
+&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT    &kp UP     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt RCTRL K_APP
+&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_DN       &kp PAGE_DOWN    &kp RALT
+                                             &trans     &trans     &trans        &trans        &trans      &trans
             >;
         };
 
@@ -71,10 +90,10 @@
 
         hotcut_layer {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(PSCRN))  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(S))      &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-                              &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans       &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(PSCRN))  &trans  &trans  &trans
+&trans  &kp LA(TAB)  &trans     &trans     &trans     &trans  &trans  &trans  &kp LS(LG(S))      &trans  &trans  &trans
+&trans  &kp LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans             &trans  &trans  &trans
+                                &trans     &trans     &trans  &trans  &trans  &trans
             >;
         };
 

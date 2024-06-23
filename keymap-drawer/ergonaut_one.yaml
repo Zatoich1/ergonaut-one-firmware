@@ -37,11 +37,11 @@ layers:
   - /
   - {t: \, h: Alt}
   - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
+  - {t: Shift, h: sticky}
   - {t: ⏎, h: lower}
   - {t: BACKSPACE, h: lower}
   - {t: ␣, h: hotcut}
-  - {t: ⌦, h: raise}
+  - {t: Sft+ LEFT ALT, h: raise}
   lower:
   - {t: F1, h: Gui}
   - F2
@@ -78,7 +78,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Alt
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -93,10 +93,10 @@ layers:
   - KP 9
   - KP MINUS
   - Vol Up
-  - Home
+  - INSERT
   - Print Scrn
-  - Page Up
-  - SLCK
+  - SCROLLLOCK
+  - Pause Break
   - CLCK
   - {t: '=', h: Ctrl}
   - KP MULTIPLY
@@ -107,8 +107,8 @@ layers:
   - MUTE
   - ←
   - ↑
-  - →
-  - Insert
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: APP, h: Ctrl}
   - Alt
   - KP 0
@@ -117,10 +117,10 @@ layers:
   - KP 3
   - KP DOT
   - Vol Down
+  - Home
   - End
-  - ↓
   - Page Down
-  - Pause Break
+  - PAGE DOWN
   - Alt
   - {type: held}
   - {t: ▽, type: trans}
@@ -185,7 +185,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+ ↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,3 +260,7 @@ layers:
 combos:
 - p: [38, 39]
   k: {t: game, h: toggle}
+- p: [39, 40]
+  k: Ctl+ BACKSPACE
+- p: [41, 40]
+  k: ''
