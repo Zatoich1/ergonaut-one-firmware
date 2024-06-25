@@ -219,8 +219,8 @@ layers:
   - Q
   - W
   - E
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - R
+  - T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -243,8 +243,8 @@ layers:
   - Z
   - X
   - C
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - V
+  - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
