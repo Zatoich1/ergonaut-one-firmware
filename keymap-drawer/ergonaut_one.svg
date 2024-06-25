@@ -309,11 +309,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="24" class="key hold">raise</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -501,11 +501,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -740,11 +740,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -931,11 +931,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1142,11 +1142,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1333,11 +1333,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap">game</text>
-<text x="420" y="235" class="combo hold">toggle</text>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<text x="420" y="205" class="combo tap">game</text>
+<text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>

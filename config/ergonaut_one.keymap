@@ -26,7 +26,7 @@
 
         game_layer_toggle {
             bindings = <&tog 5>;
-            key-positions = <38 39>;
+            key-positions = <36 41>;
         };
 
         ctrl+backspace {
