@@ -175,7 +175,7 @@ layers:
   - {t: ▽, type: trans}
   - Sft+Gui+ Z
   - Sft+Gui+ X
-  - {t: ▽, type: trans}
+  - Gui+ S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,7 +188,7 @@ layers:
   - Gui+ Z
   - Gui+ X
   - Gui+ C
-  - Gui+ V
+  - Gui+ F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
