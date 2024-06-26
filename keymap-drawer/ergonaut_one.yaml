@@ -189,7 +189,7 @@ layers:
   - Gui+ X
   - Gui+ C
   - Gui+ F
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+Gui+ S
