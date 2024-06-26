@@ -264,3 +264,5 @@ combos:
   k: Ctl+ BACKSPACE
 - p: [41, 40]
   k: ''
+- p: [37, 36]
+  k: hotcut
