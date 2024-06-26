@@ -49,6 +49,11 @@
             bindings = <&mo 4>;
             key-positions = <37 36>;
         };
+
+        game_layer2_toggle {
+            bindings = <&tog 6>;
+            key-positions = <36 40>;
+        };
     };
 
     macros {
@@ -97,7 +102,7 @@
             >;
         };
 
-        adjust_layer {
+        bluetooth_layer {
             bindings = <
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
@@ -117,10 +122,19 @@
 
         game_layer {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &trans  &trans  &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B  &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp TAB  &kp SPACE  &mo 1  &trans  &trans  &trans
+            >;
+        };
+
+        game_layer2 {
+            bindings = <
+&kp ESCAPE      &kp Q           &kp UP_ARROW    &kp E            &kp R      &kp T  &trans     &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F      &kp G  &trans     &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &kp B  &trans     &trans  &trans  &trans  &trans  &trans
+                                                &kp TAB          &kp SPACE  &mo 1  &kp ENTER  &trans  &trans
             >;
         };
     };

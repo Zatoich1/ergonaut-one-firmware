@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  bluetooth:
   - Boot
   - ''
   - ''
@@ -253,8 +253,51 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - {t: ENTER, h: lower}
+  - lower
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  game_layer2:
+  - ESCAPE
+  - Q
+  - UP ARROW
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctrl
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - F
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ↹
+  - ␣
+  - lower
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
@@ -266,3 +309,5 @@ combos:
   k: ''
 - p: [37, 36]
   k: hotcut
+- p: [36, 40]
+  k: {t: game_layer2, h: toggle}
