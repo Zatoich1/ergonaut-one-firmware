@@ -176,7 +176,7 @@ layers:
   - Sft+Gui+ Z
   - Gui+ S
   - Sft+Gui+ X
-  - {t: ▽, type: trans}
+  - Gui+ R
   - Ctl+Alt+ DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
