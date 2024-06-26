@@ -227,7 +227,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - LEFT ALT
   - A
   - S
   - D
@@ -239,7 +239,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctrl
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - ENTER
+  - {t: ENTER, h: lower}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
