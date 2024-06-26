@@ -177,7 +177,7 @@ layers:
   - Gui+ S
   - Sft+Gui+ X
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+Gui+ Print Scrn
