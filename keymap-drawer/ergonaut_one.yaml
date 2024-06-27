@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   hotcut:
-  - {t: ▽, type: trans}
+  - Gui+ D
   - Sft+Gui+ Z
   - Gui+ S
   - Sft+Gui+ X
