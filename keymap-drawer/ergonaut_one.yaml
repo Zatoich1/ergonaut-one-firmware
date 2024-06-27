@@ -137,7 +137,7 @@ layers:
   - ''
   - ''
   - ''
-  - PLAY PAUSE
+  - ''
   - ''
   - ''
   - Boot
@@ -179,7 +179,7 @@ layers:
   - Gui+ R
   - Ctl+Alt+ DELETE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PLAY PAUSE
   - Sft+Gui+ Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
