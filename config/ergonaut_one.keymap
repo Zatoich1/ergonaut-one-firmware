@@ -54,6 +54,11 @@
             bindings = <&tog 6>;
             key-positions = <36 40>;
         };
+
+        left_gut {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {

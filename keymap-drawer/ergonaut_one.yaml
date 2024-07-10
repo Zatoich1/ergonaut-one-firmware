@@ -311,3 +311,5 @@ combos:
   k: hotcut
 - p: [36, 40]
   k: {t: game_layer2, h: toggle}
+- p: [37, 38]
+  k: LEFT GUI
