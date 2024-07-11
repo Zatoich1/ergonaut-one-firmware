@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - {t: '''', h: Ctrl}
-  - {t: '-', h: Ctrl}
+  - Ctrl
   - Z
   - X
   - C
