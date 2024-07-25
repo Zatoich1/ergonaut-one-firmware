@@ -118,10 +118,10 @@
 
         hotcut_layer {
             bindings = <
-&kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &trans  &kp C_PLAY_PAUSE  &kp LS(LG(PSCRN))  &trans     &trans                   &trans
-&kp LA(TAB)  &kp LG(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &trans  &trans            &kp LS(LG(S))      &kp LG(L)  &kp LG(LS(RIGHT_ARROW))  &trans
-&trans       &kp LC(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &trans  &kp RBKT          &lang_zap          &lang_dot  &trans                   &trans
-                                       &trans         &trans     &trans              &trans  &trans            &trans
+&kp LG(D)    &kp LS(LG(Z))           &kp LG(S)             &kp LS(LG(X))           &kp LG(R)                &kp GRAVE           &trans  &kp C_PLAY_PAUSE  &kp LS(LG(PSCRN))  &trans     &trans                   &trans
+&kp LA(TAB)  &kp LG(Z)               &kp LG(X)             &kp LG(C)               &kp LG(F)                &kp LC(LA(INSERT))  &trans  &trans            &kp LS(LG(S))      &kp LG(L)  &kp LG(LS(RIGHT_ARROW))  &trans
+&trans       &kp LC(LS(LEFT_ARROW))  &kp LC(LS(UP_ARROW))  &kp LC(LS(DOWN_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LC(LA(DELETE))  &trans  &kp RBKT          &lang_zap          &lang_dot  &trans                   &trans
+                                                           &trans                  &trans                   &trans              &trans  &trans            &trans
             >;
         };
 

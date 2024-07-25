@@ -197,10 +197,10 @@ layers:
   - Gui+Sft+ RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
+  - Ctl+Sft+ LEFT ARROW
+  - Ctl+Sft+ UP ARROW
+  - Ctl+Sft+ DOWN ARROW
+  - Ctl+Sft+ RIGHT ARROW
   - Ctl+Alt+ DELETE
   - {t: ▽, type: trans}
   - ']'
