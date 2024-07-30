@@ -36,9 +36,9 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: raise}
+  - {t: ↹, h: bluetooth}
   - {t: Shift, h: sticky}
-  - {t: ⏎, h: lower}
+  - {t: ⏎, h: raise}
   - {t: BACKSPACE, h: lower}
   - {t: ␣, h: hotcut}
   - {t: Sft+ LEFT ALT, h: raise}
@@ -81,8 +81,8 @@ layers:
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
@@ -122,9 +122,9 @@ layers:
   - Page Up
   - PAGE DOWN
   - Alt
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,7 +167,7 @@ layers:
   - Reset
   - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

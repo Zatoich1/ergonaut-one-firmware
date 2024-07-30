@@ -4,10 +4,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define DEF 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
+#define ENG 0
+#define RUS 1
+#define LWR 2
+#define RSE 3
+#define ADJ 4
+#define GAME 5
 
 &lt {
     quick-tap-ms = <150>;
@@ -28,7 +30,12 @@
             then-layer = <3>;
         };
     };
-
+    macros {
+                SWITCH_LANG_AND_MO_LAYER_MACRO(lwr_rus, LWR, ENG_NUM, SECOND_NUM)
+                SWITCH_LANG_AND_TO_LAYER_MACRO(tom_rus, RUS, SECOND_NUM)
+                SWITCH_LANG_AND_TO_LAYER_MACRO(tom_eng, ENG, ENG_NUM)
+                SWITCH_LANG_AND_KP_MACRO(kp_number, HASH, SECOND_NUM, ENG_NUM)
+        };
     combos {
         compatible = "zmk,combos";
 
