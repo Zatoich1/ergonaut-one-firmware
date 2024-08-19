@@ -251,12 +251,12 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, type: held}
+  - {t: ↹, h: raise, type: held}
   - ␣
-  - ENTER
+  - {t: ⏎, h: lower}
+  - {t: game_layer_lock, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: game_layer_lock, h: toggle, type: held}
+  - {type: held}
   game_layer_temp:
   - ESCAPE
   - Q
