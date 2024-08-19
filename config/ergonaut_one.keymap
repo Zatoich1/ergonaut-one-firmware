@@ -5,7 +5,11 @@
 #define DEF 0
 #define LWR 1
 #define RSE 2
-#define ADJ 3
+#define BLU 3
+#define HOT 4
+#define GAM 5
+#define GAM_TEMP 6
+#define GAM_LOCK 7
 
 &lt {
     quick-tap-ms = <150>;
@@ -22,8 +26,18 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <LWR RSE>;
+            then-layer = <BLU>;
+        };
+
+        game_temp {
+            if-layers = <GAM_TEMP>;
+            then-layer = <GAM>;
+        };
+
+        game_lock {
+            if-layers = <GAM_LOCK>;
+            then-layer = <GAM>;
         };
     };
 
@@ -31,7 +45,7 @@
         compatible = "zmk,combos";
 
         game_layer_toggle {
-            bindings = <&tog 5>;
+            bindings = <&mo GAM>;
             key-positions = <36 41>;
         };
 
@@ -46,12 +60,12 @@
         };
 
         layer_4 {
-            bindings = <&mo 4>;
+            bindings = <&mo HOT>;
             key-positions = <37 36>;
         };
 
         game_layer2_toggle {
-            bindings = <&tog 6>;
+            bindings = <&tog GAM>;
             key-positions = <36 40>;
         };
 
@@ -85,7 +99,7 @@
 &kp ESC       &kp Q  &kp W  &kp E        &kp R      &kp T        &kp Y            &kp U        &kp I               &kp O    &kp P      &kp LBKT
 &kp LEFT_ALT  &kp A  &kp S  &kp D        &kp F      &kp G        &kp H            &kp J        &kp K               &kp L    &kp SEMI   &mt RCTRL SQT
 &kp LCTRL     &kp Z  &kp X  &kp C        &kp V      &kp B        &kp N            &kp M        &kp COMMA           &kp DOT  &kp SLASH  &mt RALT BSLH
-                            &lt RSE TAB  &sk LSHFT  &lt LWR RET  &lt 1 BACKSPACE  &lt 4 SPACE  &lt 2 LS(LEFT_ALT)
+                            &lt RSE TAB  &sk LSHFT  &lt LWR RET  &lt LWR BACKSPACE  &lt HOT SPACE  &lt RSE LS(LEFT_ALT)
             >;
         };
 
@@ -127,19 +141,28 @@
 
         game_layer {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &trans  &trans  &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y      &kp U   &kp I   &kp O   &kp P   &kp LBKT
+&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &kp H      &kp J   &kp K   &kp L   &kp SEMI &mt RCTRL SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp SLASH  &mt RALT BSLH
+                               &lt RSE TAB  &kp SPACE  &lt LWR RET        &tog GAM_LOCK  &trans  &trans
             >;
         };
 
-        game_layer2 {
+        game_layer_temp {
             bindings = <
-&kp ESCAPE      &kp Q           &kp UP_ARROW    &kp E            &kp R      &kp T  &trans     &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F      &kp G  &trans     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &kp B  &trans     &trans  &trans  &trans  &trans  &trans
-                                                &kp TAB          &kp SPACE  &mo 1  &kp ENTER  &trans  &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y      &kp U   &kp I   &kp O   &kp P   &kp LBKT
+&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &kp H      &kp J   &kp K   &kp L   &kp SEMI &mt RCTRL SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp SLASH  &mt RALT BSLH
+                              &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        game_layer_lock {
+            bindings = <
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y      &kp U   &kp I   &kp O   &kp P   &kp LBKT
+&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &kp H      &kp J   &kp K   &kp L   &kp SEMI &mt RCTRL SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp SLASH  &mt RALT BSLH
+                              &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

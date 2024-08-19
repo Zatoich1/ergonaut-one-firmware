@@ -221,88 +221,131 @@ layers:
   - E
   - R
   - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
   - LEFT ALT
   - A
   - S
   - D
   - F
   - G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: Ctrl}
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
   - B
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ↹
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: \, h: Alt}
+  - {t: ↹, h: raise, type: held}
   - ␣
-  - {t: ENTER, h: lower}
+  - {t: ⏎, h: lower}
+  - {t: game_layer_lock, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  game_layer2:
+  - {type: held}
+  game_layer_temp:
   - ESCAPE
   - Q
-  - UP ARROW
+  - W
   - E
   - R
   - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctrl
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - LEFT ALT
+  - A
+  - S
+  - D
   - F
   - G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: Ctrl}
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
   - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: \, h: Alt}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ↹
-  - ␣
-  - lower
-  - ENTER
+  game_layer_lock:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - LEFT ALT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: Ctrl}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: \, h: Alt}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [36, 41]
-  k: {t: game, h: toggle}
+  k: game
 - p: [39, 40]
   k: Ctl+ BACKSPACE
 - p: [41, 40]
@@ -310,6 +353,6 @@ combos:
 - p: [37, 36]
   k: hotcut
 - p: [36, 40]
-  k: {t: game_layer2, h: toggle}
+  k: {t: game, h: toggle}
 - p: [37, 38]
   k: LEFT GUI
