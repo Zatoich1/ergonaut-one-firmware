@@ -127,10 +127,10 @@
 
         game_layer {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B  &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp TAB  &kp SPACE  &mo 1  &trans  &trans  &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT    &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp TAB  &kp SPACE  &lt 1 ENTER  &trans  &trans  &trans
             >;
         };
 

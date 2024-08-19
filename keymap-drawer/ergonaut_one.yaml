@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - lower
+  - {t: ENTER, h: lower}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
