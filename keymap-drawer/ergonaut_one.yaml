@@ -178,8 +178,8 @@ layers:
   - Sft+Gui+ X
   - Gui+ R
   - '`'
+  - PREVIOUS
   - {t: ▽, type: trans}
-  - PLAY PAUSE
   - Sft+Gui+ Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -190,7 +190,7 @@ layers:
   - Gui+ C
   - Gui+ F
   - Ctl+Alt+ INSERT
-  - {t: ▽, type: trans}
+  - ⏯
   - {t: ▽, type: trans}
   - Sft+Gui+ S
   - Lock
@@ -202,7 +202,7 @@ layers:
   - Ctl+Sft+ DOWN ARROW
   - Ctl+Sft+ RIGHT ARROW
   - Ctl+Alt+ DELETE
-  - {t: ▽, type: trans}
+  - ⏭️
   - ']'
   - '&lang_zap'
   - '&lang_dot'

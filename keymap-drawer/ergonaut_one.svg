@@ -1,18 +1,5 @@
 <svg width="900" height="2371" viewBox="0 0 900 2371" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style>:root {
-    --fg-color: #24292e;
-    --key-color: #f6f8fa;
-    --outline-color: #c9cccf;
-    --combo-color: #ccddff;
-    --held-color: #ffdddd;
-    --font-size: 14px;
-    --small-font-size: 11px;
-    --tiny-font-size: 8px;
-    --dendron-color: #808080;
-    --trans-fg-color: #7b7e81;
-}
-
-/* inherit to force styles through use tags */
+<style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -20,19 +7,19 @@ svg path {
 /* font and background color specifications */
 svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: var(--font-size);
+    font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: var(--fg-color);
+    fill: #24292e;
 }
 
 /* default key styling */
 rect.key {
-    fill: var(--key-color);
+    fill: #f6f8fa;
 }
 
 rect.key, rect.combo {
-    stroke: var(--outline-color);
+    stroke: #c9cccf;
     stroke-width: 1;
 }
 
@@ -43,15 +30,15 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: var(--combo-color);
+    fill: #cdf;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: var(--held-color);
+    fill: #fdd;
 }
 
-/* styling for ghost (optional) keys */
+/* color accent for ghost (optional) keys */
 rect.ghost, rect.combo.ghost {
     stroke-dasharray: 4, 4;
     stroke-width: 2;
@@ -82,7 +69,7 @@ text.footer {
 
 /* styling for combo tap, and key hold/shifted label text */
 text.combo, text.hold, text.shifted {
-    font-size: var(--small-font-size);
+    font-size: 11px;
 }
 
 text.hold {
@@ -95,20 +82,24 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
-    font-size: var(--tiny-font-size);
+    font-size: 8px;
 }
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: var(--trans-fg-color);
+    fill: #7b7e81;
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
-    stroke: var(--dendron-color);
+    stroke: gray;
     fill: none;
 }
 
@@ -126,20 +117,18 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 @media (prefers-color-scheme: dark) {
-:root {
-    --fg-color: #d1d6db;
-    --key-color: #3f4750;
-    --outline-color: #60666c;
-    --combo-color: #1f3d7a;
-    --held-color: #854747;
-    --trans-fg-color: #7e8184;
-    --dendron-color: #7f7f7f;
-}
+svg.keymap { fill: #d1d6db; }
+rect.key { fill: #3f4750; }
+rect.key, rect.combo { stroke: #60666c; }
+rect.combo, rect.combo-separate { fill: #1f3d7a; }
+rect.held, rect.combo.held { fill: #854747; }
 text.label, text.footer { stroke: black; }
+text.trans { fill: #7e8184; }
+path.combo { stroke: #7f7f7f; }
 
 }</style>
 <g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label">default:</text>
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -292,8 +281,9 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">↹</text>
-<text x="0" y="24" class="key hold">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="24" class="key hold layer-activator">raise</text>
+</a></g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Shift</text>
@@ -302,32 +292,37 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
-<text x="0" y="38" class="key hold">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="38" class="key hold layer-activator">lower</text>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
-<text x="0" y="38" class="key hold">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="38" class="key hold layer-activator">lower</text>
+</a></g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
-<text x="0" y="24" class="key hold">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="0" y="24" class="key hold layer-activator">hotcut</text>
+</a></g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em">Sft+</tspan><tspan x="0" dy="1.2em">LEFT</tspan>
 <tspan x="0" dy="1.2em">ALT</tspan>
 </text>
-<text x="0" y="24" class="key hold">raise</text>
-</g>
+<a href="#raise">
+<text x="0" y="24" class="key hold layer-activator">raise</text>
+</a></g>
 <g class="combo combopos-0">
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -340,14 +335,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -358,7 +355,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-lower">
-<text x="0" y="28" class="label">lower:</text>
+<text x="0" y="28" class="label" id="lower">lower:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -535,8 +532,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -549,14 +547,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -567,7 +567,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-raise">
-<text x="0" y="28" class="label">raise:</text>
+<text x="0" y="28" class="label" id="raise">raise:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -791,8 +791,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -805,14 +806,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -823,7 +826,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-bluetooth">
-<text x="0" y="28" class="label">bluetooth:</text>
+<text x="0" y="28" class="label" id="bluetooth">bluetooth:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -999,8 +1002,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1013,14 +1017,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -1031,7 +1037,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-hotcut">
-<text x="0" y="28" class="label">hotcut:</text>
+<text x="0" y="28" class="label" id="hotcut">hotcut:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1067,15 +1073,13 @@ text.label, text.footer { stroke: black; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">`</text>
 </g>
-<g transform="translate(532, 42)" class="key trans keypos-6">
+<g transform="translate(532, 42)" class="key keypos-6">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">PREVIOUS</tspan></text>
+</g>
+<g transform="translate(588, 35)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
-</g>
-<g transform="translate(588, 35)" class="key keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">PLAY</tspan><tspan x="0" dy="1.2em">PAUSE</tspan>
-</text>
 </g>
 <g transform="translate(644, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1132,9 +1136,9 @@ text.label, text.footer { stroke: black; }
 <tspan x="0" dy="-0.6em" style="font-size: 88%">Ctl+Alt+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">INSERT</tspan>
 </text>
 </g>
-<g transform="translate(532, 98)" class="key trans keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(532, 98)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⏯</text>
 </g>
 <g transform="translate(588, 91)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1199,9 +1203,9 @@ text.label, text.footer { stroke: black; }
 <tspan x="0" dy="-0.6em" style="font-size: 88%">Ctl+Alt+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">DELETE</tspan>
 </text>
 </g>
-<g transform="translate(532, 154)" class="key trans keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(532, 154)" class="key keypos-30">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⏭️</text>
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1250,8 +1254,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1264,14 +1269,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -1282,7 +1289,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1653)" class="layer-game">
-<text x="0" y="28" class="label">game:</text>
+<text x="0" y="28" class="label" id="game">game:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1442,8 +1449,9 @@ text.label, text.footer { stroke: black; }
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1460,8 +1468,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1474,14 +1483,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
@@ -1492,7 +1503,7 @@ text.label, text.footer { stroke: black; }
 </g>
 </g>
 <g transform="translate(30, 1984)" class="layer-game_layer2">
-<text x="0" y="28" class="label">game_layer2:</text>
+<text x="0" y="28" class="label" id="game_layer2">game_layer2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1658,8 +1669,9 @@ text.label, text.footer { stroke: black; }
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">lower</text>
-</g>
+<a href="#lower">
+<text x="0" y="0" class="key tap layer-activator">lower</text>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
@@ -1676,8 +1688,9 @@ text.label, text.footer { stroke: black; }
 <path d="M420,205 l-177,0" class="combo"/>
 <path d="M420,205 l177,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
-<text x="420" y="205" class="combo tap">game</text>
-<text x="420" y="216" class="combo hold">toggle</text>
+<a href="#game">
+<text x="420" y="205" class="combo tap layer-activator">game</text>
+</a><text x="420" y="216" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="508" y="206" width="28" height="26" class="combo"/>
@@ -1690,14 +1703,16 @@ text.label, text.footer { stroke: black; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="241" y="196" width="28" height="26" class="combo"/>
-<text x="255" y="209" class="combo tap">hotcut</text>
-</g>
+<a href="#hotcut">
+<text x="255" y="209" class="combo tap layer-activator">hotcut</text>
+</a></g>
 <g class="combo combopos-4">
 <path d="M389,209 l-147,-4" class="combo"/>
 <path d="M389,209 l147,4" class="combo"/>
 <rect rx="6" ry="6" x="375" y="196" width="28" height="26" class="combo"/>
-<text x="389" y="209" class="combo tap"><tspan style="font-size: 64%">game_layer2</tspan></text>
-<text x="389" y="220" class="combo hold">toggle</text>
+<a href="#game_layer2">
+<text x="389" y="209" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer2</tspan></text>
+</a><text x="389" y="220" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="304" y="206" width="28" height="26" class="combo"/>
