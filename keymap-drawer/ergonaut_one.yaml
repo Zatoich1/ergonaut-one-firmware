@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [36, 41]
+- p: [37, 36, 38]
   k: {t: game, h: toggle}
 - p: [39, 40]
   k: Ctl+ BACKSPACE
@@ -309,7 +309,7 @@ combos:
   k: ''
 - p: [37, 36]
   k: hotcut
-- p: [36, 40]
+- p: [40, 39, 41]
   k: {t: game_layer2, h: toggle}
 - p: [37, 38]
   k: LEFT GUI
