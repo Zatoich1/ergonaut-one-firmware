@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
+  - {t: \, h: ']'}
   - {t: ↹, h: raise}
   - {t: Shift, h: sticky}
   - {t: ⏎, h: lower}
@@ -203,7 +203,7 @@ layers:
   - Ctl+Sft+ RIGHT ARROW
   - Ctl+Alt+ DELETE
   - ⏭️
-  - ']'
+  - {t: ▽, type: trans}
   - '&lang_zap'
   - '&lang_dot'
   - {t: ▽, type: trans}
