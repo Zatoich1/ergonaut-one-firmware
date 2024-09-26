@@ -36,8 +36,8 @@ layers:
   - .
   - /
   - {t: \, h: ']'}
-  - {t: ↹, h: raise}
-  - {t: Shift, h: sticky}
+  - {t: ⌦, h: raise}
+  - {t: ↹, h: hotcut}
   - {t: ⏎, h: lower}
   - {t: BACKSPACE, h: lower}
   - {t: ␣, h: hotcut}
@@ -209,10 +209,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game:
   - ESCAPE
