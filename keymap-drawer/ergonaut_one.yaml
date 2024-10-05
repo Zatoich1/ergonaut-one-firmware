@@ -22,7 +22,7 @@ layers:
   - {t: J, h: Ctrl}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
-  - {t: P, h: toggle}
+  - P
   - {t: '[', h: ']'}
   - Z
   - {t: A, h: LEFT GUI}
@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - {t: ;, h: RIGHT GUI}
-  - {t: '''', h: toggle}
+  - ''''
   - {t: ⌦, h: raise}
   - {t: ↹, h: hotcut}
   - {t: ⏎, h: lower}

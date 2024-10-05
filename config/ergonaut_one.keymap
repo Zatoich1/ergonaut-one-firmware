@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
 #define LWR 1
@@ -84,8 +83,8 @@
         default_layer {
             bindings = <
 &kp ESC    &kp NON_US_BACKSLASH  &kp W           &kp E             &kp R        &kp T        &kp Y            &kp U        &kp I               &kp O            &trans                   &trans
-&kp SLASH  &kp Q                 &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H            &mt RCTRL J  &mt RIGHT_SHIFT K   &mt RIGHT_ALT L  &kt P                    &mt RIGHT_BRACKET LEFT_BRACKET
-&kp Z      &mt LEFT_GUI A        &kp X           &kp C             &kp V        &kp B        &kp N            &kp M        &kp COMMA           &kp DOT          &mt RIGHT_GUI SEMICOLON  &kt SQT
+&kp SLASH  &kp Q                 &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H            &mt RCTRL J  &mt RIGHT_SHIFT K   &mt RIGHT_ALT L  &kp P                    &mt RIGHT_BRACKET LEFT_BRACKET
+&kp Z      &mt LEFT_GUI A        &kp X           &kp C             &kp V        &kp B        &kp N            &kp M        &kp COMMA           &kp DOT          &mt RIGHT_GUI SEMICOLON  &kp SQT
                                                  &lt RSE DEL       &lt 4 TAB    &lt LWR RET  &lt 1 BACKSPACE  &lt 4 SPACE  &lt 2 LS(LEFT_ALT)
             >;
         };
