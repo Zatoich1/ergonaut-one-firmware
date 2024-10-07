@@ -36,12 +36,12 @@ layers:
   - .
   - {t: ;, h: RIGHT GUI}
   - ''''
-  - {t: ⌦, h: raise}
-  - {t: ↹, h: hotcut}
+  - {t: ⌦, h: hotcut}
+  - {t: ↹, h: raise}
   - {t: ⏎, h: lower}
   - {t: BACKSPACE, h: lower}
-  - {t: ␣, h: hotcut}
-  - {t: Sft+ LEFT ALT, h: raise}
+  - {t: ␣, h: raise}
+  - {t: Sft+ LEFT ALT, h: hotcut}
   lower:
   - {t: F1, h: LEFT GUI}
   - F2
@@ -122,8 +122,8 @@ layers:
   - Page Up
   - PAGE DOWN
   - Alt
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,8 +165,8 @@ layers:
   - ''
   - ''
   - Reset
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,10 +197,10 @@ layers:
   - Gui+Sft+ RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+ LEFT ARROW
-  - Ctl+Sft+ UP ARROW
-  - Ctl+Sft+ DOWN ARROW
-  - Ctl+Sft+ RIGHT ARROW
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
   - Ctl+Alt+ DELETE
   - ⏭️
   - {t: ▽, type: trans}
@@ -208,8 +208,8 @@ layers:
   - '&lang_dot'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
