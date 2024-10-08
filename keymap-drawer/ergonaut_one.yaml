@@ -120,8 +120,8 @@ layers:
   - Home
   - End
   - Page Up
+  - →
   - PAGE DOWN
-  - Alt
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -185,7 +185,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+ ↹
-  - Gui+ Z
+  - Ctl+ Z
   - Gui+ X
   - Gui+ C
   - Gui+ F
@@ -197,7 +197,7 @@ layers:
   - Gui+Sft+ RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ Z
+  - Gui+ Z
   - Ctl+ X
   - Ctl+ C
   - Ctl+ V

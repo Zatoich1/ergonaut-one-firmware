@@ -102,7 +102,7 @@
             bindings = <
 &mt LEFT_GUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp INSERT  &kp PSCRN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CLCK
 &mt LEFT_ALT EQUAL   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT    &kp UP     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt RCTRL K_APP
-&kp LCTRL            &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_UP       &kp PAGE_DOWN    &kp RALT
+&kp LCTRL            &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_UP       &kp RIGHT        &kp PAGE_DOWN
                                                  &trans     &trans     &trans        &trans        &trans      &trans
             >;
         };
@@ -119,8 +119,8 @@
         hotcut_layer {
             bindings = <
 &kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans  &kp LS(LG(PSCRN))  &trans     &trans                   &trans
-&kp LA(TAB)  &kp LG(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans  &kp LS(LG(S))      &kp LG(L)  &kp LG(LS(RIGHT_ARROW))  &trans
-&trans       &kp LC(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &trans  &lang_zap          &lang_dot  &trans                   &trans
+&kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans  &kp LS(LG(S))      &kp LG(L)  &kp LG(LS(RIGHT_ARROW))  &trans
+&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &trans  &lang_zap          &lang_dot  &trans                   &trans
                                        &trans         &trans     &trans              &trans          &trans  &trans
             >;
         };
