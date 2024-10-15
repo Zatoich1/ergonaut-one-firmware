@@ -195,7 +195,7 @@ layers:
   - Sft+Gui+ S
   - Lock
   - Gui+Sft+ RIGHT ARROW
-  - {t: ▽, type: trans}
+  - Ctl+Alt+ C
   - {t: ▽, type: trans}
   - Gui+ Z
   - Ctl+ X
