@@ -3,19 +3,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define ENG 0
 #define RUS 1
 #define LWR 2
 #define RSE 3
-#define ADJ 4
-#define GAME 5
+#define BLU 4
+#define HOT 5
+#define GAM 6
+#define GAM2 7
 
 &lt {
     quick-tap-ms = <150>;
     tapping-term-ms = <150>;
 };
-
 &mt {
     quick-tap-ms = <150>;
     tapping-term-ms = <150>;
@@ -24,46 +26,51 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
         tri-layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <LWR RSE>;
+            then-layer = <BLU>;
         };
     };
-    macros {
-                SWITCH_LANG_AND_MO_LAYER_MACRO(lwr_rus, LWR, ENG_NUM, SECOND_NUM)
-                SWITCH_LANG_AND_TO_LAYER_MACRO(tom_rus, RUS, SECOND_NUM)
-                SWITCH_LANG_AND_TO_LAYER_MACRO(tom_eng, ENG, ENG_NUM)
-                SWITCH_LANG_AND_KP_MACRO(kp_number, HASH, SECOND_NUM, ENG_NUM)
-        };
+    behaviors {
+                HOLD_COMBO_BEHAVIOR(htlwr_rus, <&m_lwr_rus>) // macro_lwr_rus on hold and kp on tap
+    };
     combos {
         compatible = "zmk,combos";
-
         game_layer_toggle {
-            bindings = <&tog 5>;
-            key-positions = <36 41>;
+            bindings = <&tog GAM>;
+            key-positions = <37 36 38>;
         };
-
+        combo_eng_rus {
+                        timeout-ms = <COMBO_TIMEOUT>;
+                        key-positions = <26 39>;
+                        layers = <ENG>, <RUS>;
+                        bindings = <&m_tom_rus>;
+        };
+        combo_rus_eng {
+                        timeout-ms = <COMBO_TIMEOUT>;
+                        // key-positions = <31 39>; // left half test positions
+                        key-positions = <37 42>; // right half
+                        layers = <ENG>, <RUS>;
+                        bindings = <&m_tom_eng>;
+        };
+        combo_number_on_lower {
+                        timeout-ms = <COMBO_TIMEOUT>;
+                        key-positions = <0>; 
+                        layers = <LWR>;
+                        bindings = <&m_kp_number>;
+        };
         ctrl+backspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <39 40>;
         };
-
-        lang_zap {
-            bindings = <&none>;
-            key-positions = <41 40>;
-        };
-
         layer_4 {
             bindings = <&mo 4>;
             key-positions = <37 36>;
         };
-
         game_layer2_toggle {
-            bindings = <&tog 6>;
+            bindings = <&tog GAM2>;
             key-positions = <36 40>;
         };
-
         left_gut {
             bindings = <&kp LEFT_GUI>;
             key-positions = <37 38>;
@@ -71,13 +78,16 @@
     };
 
     macros {
+        SWITCH_LANG_AND_MO_LAYER_MACRO(lwr_rus, LWR, ENG_NUM, SECOND_NUM)
+        SWITCH_LANG_AND_TO_LAYER_MACRO(tom_rus, RUS, SECOND_NUM)
+        SWITCH_LANG_AND_TO_LAYER_MACRO(tom_eng, ENG, ENG_NUM)
+        SWITCH_LANG_AND_KP_MACRO(kp_number, HASH, SECOND_NUM, ENG_NUM)
         lang_zap: lang_zap {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_ALT) &kp COMMA &kp LS(LEFT_ALT)>;
             label = "LANG_ZAP";
         };
-
         lang_dot: lang_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
