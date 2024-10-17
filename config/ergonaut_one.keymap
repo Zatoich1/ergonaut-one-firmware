@@ -11,7 +11,7 @@
 #define BLU 4
 #define HOT 5
 #define GAM 6
-#define GAM2 7
+#define GA2 7
 
 &lt {
     quick-tap-ms = <150>;
@@ -63,7 +63,7 @@
             key-positions = <39 40>;
         };
         game_layer2_toggle {
-            bindings = <&tog GAM2>;
+            bindings = <&tog GA2>;
             key-positions = <36 40>;
         };
         left_gut {
