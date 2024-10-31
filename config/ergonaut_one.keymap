@@ -18,14 +18,7 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri-layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -33,16 +26,6 @@
         game_layer_toggle {
             bindings = <&tog 5>;
             key-positions = <37 36 38>;
-        };
-
-        ctrl+backspace {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <39 40>;
-        };
-
-        lang_zap {
-            bindings = <&none>;
-            key-positions = <41 40>;
         };
 
         layer_4 {
@@ -55,9 +38,14 @@
             key-positions = <40 39 41>;
         };
 
-        left_gut {
+        left_gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <37 38>;
+        };
+
+        bluetooth_layer {
+            bindings = <&mo 3>;
+            key-positions = <41 36>;
         };
     };
 
