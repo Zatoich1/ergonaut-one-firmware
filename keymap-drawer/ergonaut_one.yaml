@@ -41,7 +41,7 @@ layers:
   - {t: ⏎, h: lower}
   - {t: BACKSPACE, h: lower}
   - {t: ␣, h: raise}
-  - {t: Sft+ LEFT ALT, h: hotcut}
+  - {t: Sft+LEFT ALT, h: hotcut}
   lower:
   - {t: F1, h: LEFT GUI}
   - F2
@@ -172,36 +172,36 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   hotcut:
-  - Gui+ D
-  - Sft+Gui+ Z
-  - Gui+ S
-  - Sft+Gui+ X
-  - Gui+ R
+  - Gui+D
+  - Sft+Gui+Z
+  - Gui+S
+  - Sft+Gui+X
+  - Gui+R
   - '`'
   - PREVIOUS
   - {t: ▽, type: trans}
-  - Sft+Gui+ Print Scrn
+  - Sft+Gui+Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+ ↹
-  - Ctl+ Z
-  - Gui+ X
-  - Gui+ C
-  - Gui+ F
-  - Ctl+Alt+ INSERT
+  - Alt+↹
+  - Ctl+Z
+  - Gui+X
+  - Gui+C
+  - Gui+F
+  - Ctl+Alt+INSERT
   - ⏯
   - {t: ▽, type: trans}
-  - Sft+Gui+ S
+  - Sft+Gui+S
   - Lock
-  - Gui+Sft+ RIGHT ARROW
+  - Gui+Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
-  - Ctl+Alt+ DELETE
+  - Gui+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Alt+DELETE
   - ⏭️
   - {t: ▽, type: trans}
   - '&lang_zap'
@@ -300,6 +300,49 @@ layers:
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  game_to:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctrl
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ↹
+  - ␣
+  - {t: ENTER, h: lower}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
   k: {t: game, h: toggle}
@@ -311,3 +354,5 @@ combos:
   k: LEFT GUI
 - p: [41, 36]
   k: bluetooth
+- p: [40, 39, 38, 37]
+  k: {t: game_to, h: toggle}
