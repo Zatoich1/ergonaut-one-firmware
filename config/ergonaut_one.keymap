@@ -39,18 +39,13 @@
         };
 
         left_gui {
-            bindings = <&mo 1>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <37 38>;
         };
 
         bluetooth_layer {
             bindings = <&mo 3>;
             key-positions = <41 36>;
-        };
-
-        combo_to_game_to {
-            bindings = <&to 7>;
-            key-positions = <40 39 38 37>;
         };
     };
 
@@ -133,15 +128,6 @@
 &kp LCTRL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F      &kp G  &trans     &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &kp B  &trans     &trans  &trans  &trans  &trans  &trans
                                                 &kp TAB          &kp SPACE  &mo 1  &kp ENTER  &trans  &trans
-            >;
-        };
-
-        game_to {
-            bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &trans  &trans  &trans
             >;
         };
     };
