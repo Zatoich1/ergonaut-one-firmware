@@ -39,7 +39,7 @@
         };
 
         left_gui {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&mo 1>;
             key-positions = <37 38>;
         };
 
