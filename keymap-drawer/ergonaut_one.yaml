@@ -254,7 +254,7 @@ layers:
   - ↹
   - ␣
   - {t: ENTER, h: lower}
-  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game_layer_2:
