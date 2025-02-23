@@ -221,11 +221,11 @@ layers:
   - E
   - R
   - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '5'
+  - '4'
+  - '3'
+  - '2'
+  - '1'
   - {t: ▽, type: trans}
   - Ctrl
   - A
@@ -254,7 +254,7 @@ layers:
   - ↹
   - ␣
   - {t: ENTER, h: lower}
-  - {t: ▽, type: trans}
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game_layer2:
