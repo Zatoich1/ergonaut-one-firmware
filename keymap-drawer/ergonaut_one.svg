@@ -363,6 +363,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-lower">
@@ -573,6 +581,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-raise">
@@ -830,6 +846,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-bluetooth">
@@ -1039,6 +1063,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-hotcut">
@@ -1259,6 +1291,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1653)" class="layer-game_layer_1">
@@ -1472,6 +1512,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1984)" class="layer-game_layer_2">
@@ -1690,6 +1738,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2315)" class="layer-game_layer_3">
@@ -1903,6 +1959,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<path d="M756,156 l37,3" class="combo"/>
+<path d="M756,156 l-38,-6" class="combo"/>
+<rect rx="6" ry="6" x="742" y="143" width="28" height="26" class="combo"/>
+<a href="#game_layer_3">
+<text x="756" y="156" class="combo tap layer-activator"><tspan style="font-size: 64%">game_layer…</tspan></text>
+</a><text x="756" y="167" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <text x="870.0" y="2673.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>

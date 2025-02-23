@@ -23,7 +23,7 @@
     combos {
         compatible = "zmk,combos";
 
-        game_layer_toggle {
+        game_layer_1_toggle {
             bindings = <&tog 5>;
             key-positions = <37 36 38>;
         };
@@ -33,7 +33,7 @@
             key-positions = <37 36>;
         };
 
-        game_layer2_toggle {
+        game_layer_2_toggle {
             bindings = <&tog 6>;
             key-positions = <40 39 41>;
         };
@@ -46,6 +46,11 @@
         bluetooth_layer {
             bindings = <&mo 3>;
             key-positions = <41 36>;
+        };
+
+        game_layer_3_toggle {
+            bindings = <&tog 7>;
+            key-positions = <35 34 33>;
         };
     };
 

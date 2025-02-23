@@ -354,3 +354,5 @@ combos:
   k: LEFT GUI
 - p: [41, 36]
   k: bluetooth
+- p: [35, 34, 33]
+  k: {t: game_layer_3, h: toggle}
