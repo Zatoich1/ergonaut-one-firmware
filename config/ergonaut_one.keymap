@@ -113,21 +113,30 @@
             >;
         };
 
-        game_layer {
+        game_layer_1 {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp N5        &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &trans
-&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans        &trans        &trans        &trans        &trans        &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans        &trans        &trans        &trans        &trans        &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &kp LEFT_ALT  &trans        &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans        &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans        &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans        &trans  &trans  &trans  &trans  &trans
+                              &kp TAB  &kp SPACE  &lt 1 ENTER  &kp LEFT_ALT  &trans  &trans
             >;
         };
 
-        game_layer2 {
+        game_layer_2 {
             bindings = <
 &kp ESCAPE      &kp Q           &kp UP_ARROW    &kp E            &kp R      &kp T  &trans     &trans  &trans  &trans  &trans  &trans
 &kp LCTRL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F      &kp G  &trans     &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &kp B  &trans     &trans  &trans  &trans  &trans  &trans
                                                 &kp TAB          &kp SPACE  &mo 1  &kp ENTER  &trans  &trans
+            >;
+        };
+
+        game_layer_3 {
+            bindings = <
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp N5        &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &trans
+&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans        &trans        &trans        &trans        &trans        &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans        &trans        &trans        &trans        &trans        &trans
+                              &kp TAB  &kp SPACE  &lt 1 ENTER  &kp LEFT_ALT  &trans        &trans
             >;
         };
     };

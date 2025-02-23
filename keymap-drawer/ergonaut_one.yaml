@@ -214,18 +214,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game:
+  game_layer_1:
   - ESCAPE
   - Q
   - W
   - E
   - R
   - T
-  - '5'
-  - '4'
-  - '3'
-  - '2'
-  - '1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctrl
   - A
@@ -257,7 +257,7 @@ layers:
   - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game_layer2:
+  game_layer_2:
   - ESCAPE
   - Q
   - UP ARROW
@@ -300,13 +300,56 @@ layers:
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  game_layer_3:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - '5'
+  - '4'
+  - '3'
+  - '2'
+  - '1'
+  - {t: ▽, type: trans}
+  - Ctrl
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ↹
+  - ␣
+  - {t: ENTER, h: lower}
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
-  k: {t: game, h: toggle}
+  k: {t: game_layer_1, h: toggle}
 - p: [37, 36]
   k: hotcut
 - p: [40, 39, 41]
-  k: {t: game_layer2, h: toggle}
+  k: {t: game_layer_2, h: toggle}
 - p: [37, 38]
   k: LEFT GUI
 - p: [41, 36]
