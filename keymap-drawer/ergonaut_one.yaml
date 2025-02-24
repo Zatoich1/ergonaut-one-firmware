@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
   - {t: ']', h: Esc}
@@ -180,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+ Print Scrn
+  - Sft+Gui+Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -192,15 +193,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+ S
+  - Sft+Gui+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
