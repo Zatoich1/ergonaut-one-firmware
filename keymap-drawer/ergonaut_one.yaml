@@ -1,4 +1,3 @@
-layout: {zmk_keyboard: ergonaut_one}
 layers:
   DEF:
   - {t: ']', h: Esc}
