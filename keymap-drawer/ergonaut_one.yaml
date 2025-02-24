@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: ergonaut_one}
 layers:
-  default:
+  DEF:
   - Esc
   - \
   - W
@@ -37,13 +37,13 @@ layers:
   - .
   - {t: ;, h: RIGHT GUI}
   - ''''
-  - {t: ⌦, h: hotcut}
-  - {t: ↹, h: raise}
-  - {t: ⏎, h: lower}
-  - {t: BACKSPACE, h: lower}
-  - {t: ␣, h: raise}
-  - {t: Sft+LEFT ALT, h: hotcut}
-  lower:
+  - {t: ⌦, h: HOT}
+  - {t: ↹, h: RSE}
+  - {t: ⏎, h: LWR}
+  - {t: BACKSPACE, h: LWR}
+  - {t: ␣, h: RSE}
+  - {t: Sft+LEFT ALT, h: HOT}
+  LWR:
   - {t: F1, h: LEFT GUI}
   - F2
   - F3
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  RSE:
   - {t: KP NUM, h: LEFT GUI}
   - KP SLASH
   - KP 7
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth:
+  BLU:
   - Boot
   - ''
   - ''
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  hotcut:
+  HOT:
   - Gui+D
   - Sft+Gui+Z
   - Gui+S
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game_layer_1:
+  GAM1:
   - ESCAPE
   - Q
   - W
@@ -254,11 +254,11 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - {t: ENTER, h: lower}
+  - {t: ENTER, h: LWR}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game_layer_2:
+  GAM2:
   - ESCAPE
   - Q
   - UP ARROW
@@ -297,11 +297,11 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - lower
+  - LWR
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  game_layer_3:
+  GAM3:
   - ESCAPE
   - Q
   - W
@@ -340,20 +340,20 @@ layers:
   - {t: ▽, type: trans}
   - ↹
   - ␣
-  - {t: ENTER, h: lower}
+  - {t: ENTER, h: LWR}
   - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
-  k: {t: game_layer_1, h: toggle}
+  k: {t: GAM1, h: toggle}
 - p: [37, 36]
-  k: hotcut
+  k: HOT
 - p: [40, 39, 41]
-  k: {t: game_layer_2, h: toggle}
+  k: {t: GAM2, h: toggle}
 - p: [37, 38]
   k: LEFT GUI
 - p: [41, 36]
-  k: bluetooth
+  k: BLU
 - p: [35, 34, 33]
-  k: {t: game_layer_3, h: toggle}
+  k: {t: GAM3, h: toggle}
