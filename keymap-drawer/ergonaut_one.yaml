@@ -1,5 +1,6 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
-  default:
+  DEF:
   - {t: ']', h: Esc}
   - Q
   - W
@@ -36,13 +37,13 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: raise}
+  - {t: ↹, h: RSE}
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: BACKSPACE, h: lower}
-  - {t: ␣, h: hotcut}
-  - {t: ⌦, h: raise}
-  lower:
+  - {t: ⏎, h: LWR}
+  - {t: BACKSPACE, h: LWR}
+  - {t: ␣, h: HOT}
+  - {t: ⌦, h: RSE}
+  LWR:
   - {t: F1, h: Gui}
   - F2
   - F3
@@ -85,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  RSE:
   - {t: KP NUM, h: Gui}
   - KP SLASH
   - KP 7
@@ -128,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  ADJ:
   - Boot
   - ''
   - ''
@@ -171,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  hotcut:
+  HOT:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+ Print Scrn
+  - Sft+Gui+Print Scrn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -192,15 +193,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+ S
+  - Sft+Gui+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -214,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  game:
+  GAM:
   - ESCAPE
   - Q
   - W
@@ -259,4 +260,4 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [38, 39]
-  k: {t: game, h: toggle}
+  k: {t: GAM, h: toggle}
