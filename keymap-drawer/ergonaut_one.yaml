@@ -90,7 +90,7 @@ layers:
   - {t: KP NUM, h: LEFT GUI}
   - KP SLASH
   - CLCK
-  - ''
+  - Sft+Ctl+←
   - INSERT
   - Vol Up
   - KP MINUS
@@ -103,7 +103,7 @@ layers:
   - Page Up
   - DOWN ARROW
   - ↑
-  - ←
+  - →
   - MUTE
   - KP PLUS
   - KP 6
@@ -112,7 +112,7 @@ layers:
   - KP MULTIPLY
   - SCROLLLOCK
   - Ctrl
-  - →
+  - ←
   - PAGE DOWN
   - Home
   - End
