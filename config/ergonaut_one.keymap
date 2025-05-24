@@ -99,9 +99,9 @@
         raise_layer {
             display-name = "RSE";
             bindings = <
-&mt LEFT_GUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp INSERT  &kp PSCRN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CLCK
-&mt LEFT_ALT EQUAL   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT    &kp UP     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt RCTRL K_APP
-&kp LCTRL            &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp HOME    &kp END    &kp PG_UP       &kp RIGHT        &kp PAGE_DOWN
+&mt LEFT_GUI KP_NUM  &kp KP_SLASH   &kp CLCK        &kp         &kp INSERT  &kp C_VOL_UP &kp KP_MINUS   &kp KP_N9   &kp KP_N8   &kp KP_N7   &kp PSCRN       &kp PAUSE_BREAK
+&mt LEFT_ALT EQUAL   &kp PG_UP      &kp DOWN_ARROW  &kp UP      &kp LEFT    &kp C_MUTE   &kp KP_PLUS    &kp KP_N6   &kp KP_N5   &kp KP_N4   &kp KP_MULTIPLY &kp SCROLLLOCK
+&kp LCTRL            &kp RIGHT      &kp PAGE_DOWN   &kp HOME    &kp END     &kp C_VOL_DN &kp KP_DOT     &kp KP_N3   &kp KP_N2   &kp KP_N1   &kp KP_N0       &mt RCTRL K_APP
                                                  &trans     &trans     &trans        &trans        &trans      &trans
             >;
         };

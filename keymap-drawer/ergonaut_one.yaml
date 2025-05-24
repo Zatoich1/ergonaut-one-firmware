@@ -89,40 +89,40 @@ layers:
   RSE:
   - {t: KP NUM, h: LEFT GUI}
   - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - Vol Up
-  - INSERT
-  - Print Scrn
-  - SCROLLLOCK
-  - Pause Break
   - CLCK
+  - ''
+  - INSERT
+  - Vol Up
+  - KP MINUS
+  - KP 9
+  - KP 8
+  - KP 7
+  - Print Scrn
+  - Pause Break
   - {t: '=', h: LEFT ALT}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - MUTE
-  - ←
-  - ↑
-  - DOWN ARROW
-  - RIGHT ARROW
-  - {t: APP, h: Ctrl}
-  - Ctrl
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - Vol Down
-  - Home
-  - End
   - Page Up
+  - DOWN ARROW
+  - ↑
+  - ←
+  - MUTE
+  - KP PLUS
+  - KP 6
+  - KP 5
+  - KP 4
+  - KP MULTIPLY
+  - SCROLLLOCK
+  - Ctrl
   - →
   - PAGE DOWN
+  - Home
+  - End
+  - Vol Down
+  - KP DOT
+  - KP 3
+  - KP 2
+  - KP 1
+  - KP 0
+  - {t: APP, h: Ctrl}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
