@@ -90,10 +90,10 @@ layers:
   - {t: KP NUM, h: LEFT GUI}
   - KP SLASH
   - CLCK
-  - Sft+Ctl+←
+  - Ctl+PAGE UP
   - INSERT
+  - Ctl+PAGE DOWN
   - Vol Up
-  - KP MINUS
   - KP 9
   - KP 8
   - KP 7
@@ -101,11 +101,11 @@ layers:
   - Pause Break
   - {t: '=', h: LEFT ALT}
   - Page Up
-  - DOWN ARROW
-  - ↑
+  - UP ARROW
+  - ↓
   - →
+  - Alt+9
   - MUTE
-  - KP PLUS
   - KP 6
   - KP 5
   - KP 4
@@ -113,11 +113,11 @@ layers:
   - SCROLLLOCK
   - Ctrl
   - ←
+  - PAGE UP
   - PAGE DOWN
   - Home
   - End
-  - Vol Down
-  - KP DOT
+  - VOLUME DOWN
   - KP 3
   - KP 2
   - KP 1

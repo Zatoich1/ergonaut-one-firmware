@@ -99,10 +99,10 @@
         raise_layer {
             display-name = "RSE";
             bindings = <
-&mt LEFT_GUI KP_NUM  &kp KP_SLASH  &kp CLCK        &kp LS(LC(LEFT))  &kp INSERT  &kp C_VOL_UP  &kp KP_MINUS  &kp KP_N9  &kp KP_N8  &kp KP_N7  &kp PSCRN        &kp PAUSE_BREAK
-&mt LEFT_ALT EQUAL   &kp PG_UP     &kp DOWN_ARROW  &kp UP            &kp RIGHT   &kp C_MUTE    &kp KP_PLUS   &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_MULTIPLY  &kp SCROLLLOCK
-&kp LCTRL            &kp LEFT      &kp PAGE_DOWN   &kp HOME          &kp END     &kp C_VOL_DN  &kp KP_DOT    &kp KP_N3  &kp KP_N2  &kp KP_N1  &kp KP_N0        &mt RCTRL K_APP
-                                                   &trans            &trans      &trans        &trans        &trans     &trans
+&mt LEFT_GUI KP_NUM  &kp KP_SLASH  &kp CLCK      &kp LC(PAGE_UP)  &kp INSERT  &kp LC(PAGE_DOWN)  &kp C_VOL_UP       &kp KP_N9  &kp KP_N8  &kp KP_N7  &kp PSCRN        &kp PAUSE_BREAK
+&mt LEFT_ALT EQUAL   &kp PG_UP     &kp UP_ARROW  &kp DOWN         &kp RIGHT   &kp LA(N9)         &kp K_MUTE         &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_MULTIPLY  &kp SCROLLLOCK
+&kp LCTRL            &kp LEFT      &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME    &kp END            &kp C_VOLUME_DOWN  &kp KP_N3  &kp KP_N2  &kp KP_N1  &kp KP_N0        &mt RCTRL K_APP
+                                                 &trans           &trans      &trans             &trans             &trans     &trans
             >;
         };
 
