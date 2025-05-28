@@ -358,16 +358,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lang_excl'
+  - '&lang_at'
   - '&lang_hash'
   - '&lang_dollar'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&lang_prcnt'
+  - '&lang_caret'
+  - '&lang_amps'
+  - '&lang_astr'
+  - '&lang_lpar'
+  - '&lang_rpas'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
