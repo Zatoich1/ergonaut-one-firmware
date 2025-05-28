@@ -41,8 +41,8 @@
             key-positions = <40 39 41>;
         };
 
-        left_gui {
-            bindings = <&kp LEFT_GUI>;
+        rus_lang_layer_8 {
+            bindings = <&mo 8>;
             key-positions = <37 38>;
         };
 
@@ -58,18 +58,18 @@
     };
 
     macros {
-        lang_zap: lang_zap {
+        lang_dollar: lang_dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp COMMA &kp LS(LEFT_ALT)>;
-            label = "LANG_ZAP";
+            bindings = <&kp LS(LEFT_ALT) &kp DOLLAR &kp LS(LEFT_ALT)>;
+            label = "LANG_DLLR";
         };
 
-        lang_dot: lang_dot {
+        lang_hash: lang_hash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp DOT &kp LS(LEFT_ALT)>;
-            label = "LANG_DOT";
+            bindings = <&kp LS(LEFT_ALT) &kp HASH &kp LS(LEFT_ALT)>;
+            label = "LANG_HASH";
         };
     };
 
@@ -119,9 +119,9 @@
         hotcut_layer {
             display-name = "HOT";
             bindings = <
-&kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans  &kp LS(LG(PSCRN))  &trans     &trans                   &trans
-&kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans  &kp LS(LG(S))      &kp LG(L)  &kp LG(LS(RIGHT_ARROW))  &trans
-&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &trans  &lang_zap          &lang_dot  &trans                   &trans
+&kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans  &kp LS(LG(PSCRN))  &trans      &trans                   &trans
+&kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans  &kp LS(LG(S))      &kp LG(L)   &kp LG(LS(RIGHT_ARROW))  &trans
+&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &trans  &lang_dollar       &lang_hash  &trans                   &trans
                                        &trans         &trans     &trans              &trans          &trans  &trans
             >;
         };
@@ -154,6 +154,17 @@
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans        &trans        &trans        &trans        &trans        &trans
                               &kp TAB  &kp SPACE  &lt 1 ENTER  &kp LEFT_ALT  &trans        &trans
             >;
+        };
+
+        rus_lang {
+            bindings = <
+&trans  &trans  &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &lang_hash  &lang_dollar  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans      &trans        &trans  &trans  &trans  &trans
+            >;
+
+            label = "RUS";
         };
     };
 };

@@ -205,8 +205,8 @@ layers:
   - Ctl+Alt+DELETE
   - ⏭️
   - {t: ▽, type: trans}
-  - '&lang_zap'
-  - '&lang_dot'
+  - '&lang_dollar'
+  - '&lang_hash'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -344,6 +344,49 @@ layers:
   - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  RUS:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&lang_hash'
+  - '&lang_dollar'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
   k: {t: GAM1, h: toggle}
@@ -352,7 +395,7 @@ combos:
 - p: [40, 39, 41]
   k: {t: GAM2, h: toggle}
 - p: [37, 38]
-  k: LEFT GUI
+  k: RUS
 - p: [41, 36]
   k: BLU
 - p: [35, 34, 33]
