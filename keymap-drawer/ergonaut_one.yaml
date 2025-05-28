@@ -67,7 +67,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: '-', h: Ctrl}
+  - {t: '-', h: RIGHT ALT}
   - {t: '=', h: Ctrl}
   - '1'
   - '2'
@@ -79,7 +79,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - DELETE
+  - {t: DELETE, h: Ctrl}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -345,19 +345,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RUS:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: +, h: LEFT ALT}
   - '&lang_excl'
   - '&lang_at'
   - '&lang_hash'
@@ -368,19 +368,19 @@ layers:
   - '&lang_astr'
   - '&lang_lpar'
   - '&lang_rpas'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '-', h: RIGHT ALT}
+  - {t: '=', h: Ctrl}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: DELETE, h: Ctrl}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
