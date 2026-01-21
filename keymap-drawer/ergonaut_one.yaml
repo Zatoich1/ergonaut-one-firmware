@@ -204,7 +204,7 @@ layers:
   - Ctl+V
   - Ctl+Alt+DELETE
   - ⏭️
-  - {t: ▽, type: trans}
+  - ']'
   - '&lang_dollar'
   - '&lang_hash'
   - {t: ▽, type: trans}

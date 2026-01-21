@@ -175,10 +175,10 @@
         hotcut_layer {
             display-name = "HOT";
             bindings = <
-&kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans  &kp LS(LG(PSCRN))  &trans      &trans                   &trans
-&kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans  &kp LS(LG(S))      &kp LG(L)   &kp LG(LS(RIGHT_ARROW))  &trans
-&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &trans  &lang_dollar       &lang_hash  &trans                   &trans
-                                       &trans         &trans     &trans              &trans          &trans  &trans
+&kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans             &kp LS(LG(PSCRN))  &trans      &trans                   &trans
+&kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans             &kp LS(LG(S))      &kp LG(L)   &kp LG(LS(RIGHT_ARROW))  &trans
+&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &kp RIGHT_BRACKET  &lang_dollar       &lang_hash  &trans                   &trans
+                                       &trans         &trans     &trans              &trans          &trans             &trans
             >;
         };
 
