@@ -1,0 +1,16 @@
+#define langswitch LA(LSHIFT)
+
+#define SWITCH_LANG_KP_RETURN_LANG(NAME, KEY) \
+  m_##NAME: chg_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(chg_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <SWITCH_COMBO_WAIT_MS>; \
+      tap-ms = <SWITCH_COMBO_TAP_MS>; \
+      bindings \
+        = <&macro_tap &kp langswitch> \
+        , <&macro_tap &kp KEY> \
+        , <&macro_tap_time SWITCH_COMBO_TAP_MS> \
+        , <&macro_tap &kp langswitch> \
+        ; \
+  };
