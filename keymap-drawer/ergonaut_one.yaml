@@ -40,7 +40,7 @@ layers:
   - {t: ⌦, h: HOT}
   - {t: ↹, h: RSE}
   - {t: ⏎, h: LWR}
-  - {t: BACKSPACE, h: LWR}
+  - {t: BACKSPACE, h: CHG}
   - {t: ␣, h: RSE}
   - {t: Alt+LSHIFT, h: HOT}
   LWR:
@@ -298,7 +298,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
