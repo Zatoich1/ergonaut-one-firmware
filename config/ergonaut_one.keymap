@@ -6,9 +6,10 @@
 #define DEF 0
 #define LWR 1
 #define RSE 2
-#define ADJ 3
+#define BLU 3
 #define HOT 4
 #define GAM 5
+#define RUS 6
 
 &lt {
     quick-tap-ms = <150>;
@@ -26,36 +27,20 @@
     combos {
         compatible = "zmk,combos";
 
-        game_layer_1_toggle {
-            bindings = <&mo 3>;
+        bluetooth_layer_1 {
+            bindings = <&mo BLU>;
             key-positions = <37 36 38>;
         };
 
-        layer_4 {
-            bindings = <&mo 4>;
-            key-positions = <37 36>;
-        };
-
-        game_layer_2_toggle {
-            bindings = <&mo 3>;
-            key-positions = <40 39 41>;
-        };
-
-        rus_lang_layer_8 {
-            bindings = <&mo 8>;
-            key-positions = <37 38>;
-        };
-
-        bluetooth_layer {
-            bindings = <&mo 3>;
+        bluetooth_layer_2 {
+            bindings = <&mo BLU>;
             key-positions = <41 36>;
         };
 
-        game_layer_3_toggle {
-            bindings = <&tog 7>;
-            key-positions = <35 34 33>;
+        bluetooth_layer_3 {
+            bindings = <&mo BLU>;
+            key-positions = <39 40 41>;
         };
-    };
 
     macros {
         lang_dollar: lang_dollar {
@@ -192,8 +177,8 @@
             >;
         };
 
-        game_layer_1 {
-            display-name = "GAM1";
+        game_layer {
+            display-name = "GAM";
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
@@ -202,35 +187,14 @@
             >;
         };
 
-        game_layer_2 {
-            display-name = "GAM2";
-            bindings = <
-&kp ESCAPE      &kp Q           &kp UP_ARROW    &kp E            &kp R      &kp T  &trans     &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F      &kp G  &trans     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &kp B  &trans     &trans  &trans  &trans  &trans  &trans
-                                                &kp TAB          &kp SPACE  &mo 1  &kp ENTER  &trans  &trans
-            >;
-        };
-
-        game_layer_3 {
-            display-name = "GAM3";
-            bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &kp N5        &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &trans
-&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans        &trans        &trans        &trans        &trans        &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans        &trans        &trans        &trans        &trans        &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &kp LEFT_ALT  &trans        &trans
-            >;
-        };
-
         rus_lang {
+            display-name = "RUS";
             bindings = <
 &kp F1             &kp F2      &kp F3    &kp F4      &kp F5        &kp F6       &kp F7       &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
 &mt LEFT_ALT PLUS  &lang_excl  &lang_at  &lang_hash  &lang_dollar  &lang_prcnt  &lang_caret  &lang_amps  &lang_astr  &lang_lpar  &lang_rpas  &mt RIGHT_ALT MINUS
 &mt LCTRL EQUAL    &kp N1      &kp N2    &kp N3      &kp N4        &kp N5       &kp N6       &kp N7      &kp N8      &kp N9      &kp N0      &mt RCTRL DELETE
                                          &trans      &trans        &trans       &trans       &trans      &trans
             >;
-
-            label = "RUS";
         };
     };
 };
