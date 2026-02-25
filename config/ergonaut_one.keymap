@@ -47,7 +47,7 @@
         lang_dollar: lang_dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(DOLLAR)) &kp LS(LA())>;
+            bindings = <&kp LS(LA(DOLLAR)) &kp LS(LALT) &macro_release &kp LALT>;
             label = "LANG_DLLR";
         };
 
