@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - Sft+Alt+^
-  - {t: ▽, type: trans}
+  - Sft+Alt+1
   - /
   - Q
   - {t: S, h: LEFT ALT}
