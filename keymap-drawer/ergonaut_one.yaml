@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - {t: ▽, type: trans}
+  - Sft+Alt+^
   - {t: ▽, type: trans}
   - /
   - Q
