@@ -41,6 +41,7 @@
             bindings = <&mo BLU>;
             key-positions = <39 40 41>;
         };
+    };
 
     macros {
         lang_dollar: lang_dollar {
