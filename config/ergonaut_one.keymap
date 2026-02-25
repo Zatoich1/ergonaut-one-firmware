@@ -9,7 +9,7 @@
 #define BLU 3
 #define HOT 4
 #define GAM 5
-#define RUS 6
+#define CHG 6
 
 &lt {
     quick-tap-ms = <150>;
@@ -187,8 +187,8 @@
             >;
         };
 
-        rus_lang {
-            display-name = "RUS";
+        chg_lang {
+            display-name = "CHG";
             bindings = <
 &kp F1             &kp F2      &kp F3    &kp F4      &kp F5        &kp F6       &kp F7       &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
 &mt LEFT_ALT PLUS  &lang_excl  &lang_at  &lang_hash  &lang_dollar  &lang_prcnt  &lang_caret  &lang_amps  &lang_astr  &lang_lpar  &lang_rpas  &mt RIGHT_ALT MINUS
