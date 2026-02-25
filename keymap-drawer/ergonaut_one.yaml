@@ -167,11 +167,11 @@ layers:
   - ''
   - Reset
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   HOT:
   - Gui+D
   - Sft+Gui+Z
@@ -389,11 +389,11 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
-  k: {t: BLU, h: toggle}
+  k: BLU
 - p: [37, 36]
   k: HOT
 - p: [40, 39, 41]
-  k: {t: BLU, h: toggle}
+  k: BLU
 - p: [37, 38]
   k: RUS
 - p: [41, 36]

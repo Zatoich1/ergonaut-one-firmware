@@ -27,7 +27,7 @@
         compatible = "zmk,combos";
 
         game_layer_1_toggle {
-            bindings = <&tog 3>;
+            bindings = <&mo 3>;
             key-positions = <37 36 38>;
         };
 
@@ -37,7 +37,7 @@
         };
 
         game_layer_2_toggle {
-            bindings = <&tog 3>;
+            bindings = <&mo 3>;
             key-positions = <40 39 41>;
         };
 
