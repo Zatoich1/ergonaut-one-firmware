@@ -42,7 +42,7 @@ layers:
   - {t: ⏎, h: LWR}
   - {t: BACKSPACE, h: LWR}
   - {t: ␣, h: RSE}
-  - {t: Sft+LEFT ALT, h: HOT}
+  - {t: Alt+LEFT SHIFT, h: HOT}
   LWR:
   - {t: F1, h: LEFT GUI}
   - F2
