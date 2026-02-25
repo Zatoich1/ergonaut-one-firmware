@@ -389,11 +389,11 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
-  k: {t: GAM1, h: toggle}
+  k: {t: BLU, h: toggle}
 - p: [37, 36]
   k: HOT
 - p: [40, 39, 41]
-  k: {t: GAM2, h: toggle}
+  k: {t: BLU, h: toggle}
 - p: [37, 38]
   k: RUS
 - p: [41, 36]

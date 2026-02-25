@@ -333,8 +333,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -346,8 +346,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -551,8 +551,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -564,8 +564,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -813,8 +813,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -826,8 +826,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1041,8 +1041,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -1054,8 +1054,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1268,8 +1268,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -1281,8 +1281,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1486,8 +1486,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -1499,8 +1499,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1711,8 +1711,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -1724,8 +1724,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1931,8 +1931,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -1944,8 +1944,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -2147,8 +2147,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M287,214 l-44,-7" class="combo"/>
 <path d="M287,214 l46,7" class="combo"/>
 <rect rx="6" ry="6" x="273" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM1">
-<text x="287" y="214" class="combo tap layer-activator">GAM1</text>
+<a href="#BLU">
+<text x="287" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="287" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
@@ -2160,8 +2160,8 @@ path.combo { stroke: #7f7f7f; }
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
-<a href="#GAM2">
-<text x="553" y="214" class="combo tap layer-activator">GAM2</text>
+<a href="#BLU">
+<text x="553" y="214" class="combo tap layer-activator">BLU</text>
 </a><text x="553" y="225" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
