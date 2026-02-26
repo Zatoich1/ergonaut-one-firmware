@@ -145,14 +145,14 @@
         lang_leftbracket: lang_leftbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(LEFT_BRACKET)) &kp LA(LS(LCTRL))>;
+            bindings = <&kp LA(LS(LCTRL)) &kp LEFT_BRACKET &kp LA(LS(LCTRL))>;
             label = "LANG_LEFTBRACKET";
         };
 
         lang_rightbracket: lang_rightbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(RIGHT_BRACKET)) &kp LA(LS(LCTRL))>;
+            bindings = <&kp LA(LS(LCTRL)) &kp RIGHT_BRACKET &kp LA(LS(LCTRL))>;
             label = "LANG_RIGHTBRACKET";
         };
     };
