@@ -300,7 +300,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - '&transр'
+  - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
   k: BLU
