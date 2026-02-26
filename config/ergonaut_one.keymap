@@ -114,18 +114,46 @@
             label = "LANG_CARET";
         };
 
-        lang_caret: lang_comma {
+        lang_comma: lang_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(COMMA)) &kp LA(LS(LCTRL))>;
-            label = "LANG_CARET";
+            label = "LANG_COMMA";
         };
 
-        lang_caret: lang_period {
+        lang_period: lang_period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(PERIOD)) &kp LA(LS(LCTRL))>;
-            label = "LANG_CARET";
+            label = "LANG_PERIOD";
+        };
+
+        lang_slash: lang_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(SLASH)) &kp LA(LS(LCTRL))>;
+            label = "LANG_SLASH";
+        };
+
+        lang_backslash: lang_backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(BACKSLASH)) &kp LA(LS(LCTRL))>;
+            label = "LANG_BACKSLASH";
+        };
+
+        lang_leftbracket: lang_leftbracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LEFT_BRACKET)) &kp LA(LS(LCTRL))>;
+            label = "LANG_LEFTBRACKET";
+        };
+
+        lang_rightbracket: lang_rightbracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(RIGHT_BRACKET)) &kp LA(LS(LCTRL))>;
+            label = "LANG_RIGHTBRACKET";
         };
     };
 
@@ -155,7 +183,7 @@
             display-name = "LWR";
             bindings = <
 &mt LEFT_GUI F1    &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&mt LEFT_ALT PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RIGHT_ALT MINUS
+&lang_slash  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RIGHT_ALT MINUS
 &mt LCTRL EQUAL    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &mt RCTRL DELETE
                                      &trans    &trans    &trans     &trans     &trans    &trans
             >;
@@ -186,7 +214,7 @@
             bindings = <
 &kp LG(D)    &kp LS(LG(Z))  &kp LG(S)  &kp LS(LG(X))  &kp LG(R)  &kp GRAVE           &kp C_PREVIOUS  &trans             &kp LS(LG(PSCRN))  &trans      &trans                   &trans
 &kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(F)  &kp LC(LA(INSERT))  &kp C_PP        &trans             &kp LS(LG(S))      &kp LG(L)   &kp LG(LS(RIGHT_ARROW))  &trans
-&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &kp RIGHT_BRACKET  &lang_dollar       &lang_hash  &trans                   &trans
+&trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(LA(DELETE))  &kp C_NEXT      &kp RIGHT_BRACKET  &lang_dollar       &lang_hash  &lang_leftbracket        &lang_rightbracket
                                        &trans         &trans     &trans              &trans          &trans             &trans
             >;
         };
@@ -204,10 +232,10 @@
         chg_lang {
             display-name = "CHG";
             bindings = <
-&kp F1             &kp F2      &kp F3    &kp F4      &kp F5        &kp F6       &kp F7       &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-&mt LEFT_ALT PLUS  &lang_excl  &lang_at  &lang_hash  &lang_dollar  &lang_prcnt  &lang_caret  &lang_amps  &lang_astr  &lang_lpar  &lang_rpas  &mt RIGHT_ALT MINUS
-&mt LCTRL EQUAL    &kp N1      &kp N2    &kp N3      &kp N4        &kp N5       &kp N6       &kp N7      &lang_comma      &lang_period      &kp N0      &mt RCTRL DELETE
-                                         &trans      &trans        &trans       &trans       &trans      &trans
+&kp F1             &lang_backslash      &kp F3    &kp F4      &kp F5        &kp F6       &kp UNDER       &kp EQUAL      &kp PLUS      &kp MINUS     &kp F11     &kp F12
+&lang_slash  &lang_excl  &lang_at  &lang_hash  &lang_dollar  &lang_prcnt  &lang_caret  &lang_amps  &lang_astr  &lang_lpar  &lang_rpas  &mt RIGHT_ALT MINUS
+&mt LCTRL EQUAL    &kp N1      &kp N2    &kp N3      &kp N4        &kp N5       &kp N6       &kp N7      &lang_comma      &lang_period      &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+                                         &trans      &trans        &trans       &trans       &trans      &transр
             >;
         };
     };
