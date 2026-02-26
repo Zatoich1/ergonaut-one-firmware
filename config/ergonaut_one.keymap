@@ -48,119 +48,102 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(DOLLAR)) &kp LA(LS(LCTRL))>;
-            label = "LANG_DLLR";
         };
 
         lang_hash: lang_hash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(HASH)) &kp LA(LS(LCTRL))>;
-            label = "LANG_HASH";
         };
 
         lang_at: lang_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(AT_SIGN)) &kp LA(LS(LCTRL))>;
-            label = "LANG_AT";
         };
 
         lang_excl: lang_excl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(EXCLAMATION)) &kp LA(LS(LCTRL))>;
-            label = "LANG_EXCL";
         };
 
         lang_amps: lang_amps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(AMPERSAND)) &kp LA(LS(LCTRL))>;
-            label = "LANG_AMPS";
         };
 
         lang_astr: lang_astr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(ASTERISK)) &kp LA(LS(LCTRL))>;
-            label = "LANG_ASTR";
         };
 
         lang_lpar: lang_lpar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LEFT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
-            label = "LANG_LPAR";
         };
 
         lang_rpas: lang_rpas {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(RIGHT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
-            label = "LANG_RPAS";
         };
 
         lang_prcnt: lang_prcnt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(PERCENT)) &kp LA(LS(LCTRL))>;
-            label = "LANG_PRCNT";
         };
 
         lang_caret: lang_caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(CARET)) &kp LA(LS(LCTRL))>;
-            label = "LANG_CARET";
         };
 
         lang_comma: lang_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LCTRL)) &kp COMMA &kp LA(LS(LCTRL))>;
-            label = "LANG_COMMA";
         };
 
         lang_period: lang_period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LCTRL)) &kp PERIOD &kp LA(LS(LCTRL))>;
-            label = "LANG_PERIOD";
         };
 
         lang_slash: lang_slash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LCTRL)) &kp SLASH &kp LA(LS(LCTRL))>;
-            label = "LANG_SLASH";
         };
 
         lang_backslash: lang_backslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LA(LCTRL)) &kp BACKSLASH &kp LA(LS(LCTRL))>;
-            label = "LANG_BACKSLASH";
         };
 
         lang_leftbracket: lang_leftbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(LCTRL)) &kp LEFT_BRACKET &kp LA(LS(LCTRL))>;
-            label = "LANG_LEFTBRACKET";
         };
 
         lang_rightbracket: lang_rightbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(LCTRL)) &kp RIGHT_BRACKET &kp LA(LS(LCTRL))>;
-            label = "LANG_RIGHTBRACKET";
         };
 
         lang_grave: lang_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(LCTRL)) &kp GRAVE &kp LA(LS(LCTRL))>;
-            label = "LANG_GRAVE";
         };
     };
 
