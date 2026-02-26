@@ -54,63 +54,77 @@
         lang_hash: lang_hash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp HASH &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(HASH)) &kp LA(LS(LCTRL))>;
             label = "LANG_HASH";
         };
 
         lang_at: lang_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp AT_SIGN &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(AT_SIGN)) &kp LA(LS(LCTRL))>;
             label = "LANG_AT";
         };
 
         lang_excl: lang_excl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp EXCLAMATION &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(EXCLAMATION)) &kp LA(LS(LCTRL))>;
             label = "LANG_EXCL";
         };
 
         lang_amps: lang_amps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp AMPERSAND &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(AMPERSAND)) &kp LA(LS(LCTRL))>;
             label = "LANG_AMPS";
         };
 
         lang_astr: lang_astr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp ASTERISK &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(ASTERISK)) &kp LA(LS(LCTRL))>;
             label = "LANG_ASTR";
         };
 
         lang_lpar: lang_lpar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp LEFT_PARENTHESIS &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(LEFT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
             label = "LANG_LPAR";
         };
 
         lang_rpas: lang_rpas {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp RIGHT_PARENTHESIS &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(RIGHT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
             label = "LANG_RPAS";
         };
 
         lang_prcnt: lang_prcnt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp PERCENT &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(PERCENT)) &kp LA(LS(LCTRL))>;
             label = "LANG_PRCNT";
         };
 
         lang_caret: lang_caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &kp CARET &kp LS(LEFT_ALT)>;
+            bindings = <&kp LS(LA(CARET)) &kp LA(LS(LCTRL))>;
+            label = "LANG_CARET";
+        };
+
+        lang_caret: lang_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(COMMA)) &kp LA(LS(LCTRL))>;
+            label = "LANG_CARET";
+        };
+
+        lang_caret: lang_period {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(PERIOD)) &kp LA(LS(LCTRL))>;
             label = "LANG_CARET";
         };
     };
@@ -130,7 +144,7 @@
         default_layer {
             display-name = "DEF";
             bindings = <
-&kp ESC    &kp BACKSLASH   &kp W           &kp E             &kp R        &kp T      &kp Y            &kp U        &kp I              &kp O            &kp LS(LA(CARET))        &kp LS(LA(N1))
+&kp ESC    &kp BACKSLASH   &kp W           &kp E             &kp R        &kp T      &kp Y            &kp U        &kp I              &kp O            &none        &none
 &kp SLASH  &kp Q           &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G      &kp H            &mt LCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp P                    &mt RIGHT_BRACKET LEFT_BRACKET
 &kp Z      &mt LEFT_GUI A  &kp X           &kp C             &kp V        &kp B      &kp N            &kp M        &kp COMMA          &kp DOT          &mt RIGHT_GUI SEMICOLON  &kp SQT
                                            &lt 4 DEL         &lt 2 TAB    &lt 1 RET  &lt 6 BACKSPACE  &lt 2 SPACE  &lt 4 LS(LA(LCTRL))
@@ -192,7 +206,7 @@
             bindings = <
 &kp F1             &kp F2      &kp F3    &kp F4      &kp F5        &kp F6       &kp F7       &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
 &mt LEFT_ALT PLUS  &lang_excl  &lang_at  &lang_hash  &lang_dollar  &lang_prcnt  &lang_caret  &lang_amps  &lang_astr  &lang_lpar  &lang_rpas  &mt RIGHT_ALT MINUS
-&mt LCTRL EQUAL    &kp N1      &kp N2    &kp N3      &kp N4        &kp N5       &kp N6       &kp N7      &kp N8      &kp N9      &kp N0      &mt RCTRL DELETE
+&mt LCTRL EQUAL    &kp N1      &kp N2    &kp N3      &kp N4        &kp N5       &kp N6       &kp N7      &lang_comma      &lang_period      &kp N0      &mt RCTRL DELETE
                                          &trans      &trans        &trans       &trans       &trans      &trans
             >;
         };

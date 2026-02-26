@@ -11,8 +11,8 @@ layers:
   - U
   - I
   - O
-  - Sft+Alt+^
-  - Sft+Alt+1
+  - ''
+  - ''
   - /
   - Q
   - {t: S, h: LEFT ALT}
@@ -291,8 +291,8 @@ layers:
   - '5'
   - '6'
   - '7'
-  - '8'
-  - '9'
+  - '&lang_comma'
+  - '&lang_period'
   - '0'
   - {t: DELETE, h: Ctrl}
   - {t: ▽, type: trans}
