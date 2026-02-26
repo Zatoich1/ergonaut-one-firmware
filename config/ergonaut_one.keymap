@@ -117,14 +117,14 @@
         lang_comma: lang_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(COMMA)) &kp COMMA &kp LA(LS(LCTRL))>;
+            bindings = <&kp LS(LA(LCTRL)) &kp COMMA &kp LA(LS(LCTRL))>;
             label = "LANG_COMMA";
         };
 
         lang_period: lang_period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(PERIOD)) &kp PERIOD &kp LA(LS(LCTRL))>;
+            bindings = <&kp LS(LA(LCTRL)) &kp PERIOD &kp LA(LS(LCTRL))>;
             label = "LANG_PERIOD";
         };
 
