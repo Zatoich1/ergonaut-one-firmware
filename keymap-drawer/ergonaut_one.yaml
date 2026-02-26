@@ -24,7 +24,7 @@ layers:
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
   - P
-  - {t: '[', h: ']'}
+  - '['
   - Z
   - {t: A, h: LEFT GUI}
   - X
@@ -196,7 +196,7 @@ layers:
   - Sft+Gui+S
   - Lock
   - Gui+Sft+RIGHT ARROW
-  - {t: ▽, type: trans}
+  - '&lang_grave'
   - {t: ▽, type: trans}
   - Gui+Z
   - Ctl+X
@@ -282,7 +282,7 @@ layers:
   - '&lang_astr'
   - '&lang_lpar'
   - '&lang_rpas'
-  - {t: '-', h: RIGHT ALT}
+  - '`'
   - {t: '=', h: Ctrl}
   - '1'
   - '2'
