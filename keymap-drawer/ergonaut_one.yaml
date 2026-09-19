@@ -131,41 +131,41 @@ layers:
   - {t: ▽, type: trans}
   BLU:
   - BT CLR
-  - ''
-  - ''
-  - ''
-  - Out BLE
-  - Out USB
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
   - BT CLR
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
-  - Boot
   - Out BLE
+  - Out BLE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - Out USB
   - Out USB
   - ''
   - ''
-  - Reset
+  - ''
+  - ''
+  - Boot
   - {type: held}
   - {type: held}
   - {type: held}
