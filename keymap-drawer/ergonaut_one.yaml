@@ -87,42 +87,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RSE:
-  - {t: KP NUM, h: LEFT GUI}
-  - KP SLASH
-  - CLCK
-  - Ctl+PAGE UP
-  - INSERT
-  - Ctl+PAGE DOWN
-  - Vol Up
-  - KP 9
-  - KP 8
-  - KP 7
-  - Print Scrn
-  - Pause Break
-  - {t: '=', h: LEFT ALT}
-  - Page Up
-  - UP ARROW
-  - ↓
-  - →
-  - Alt+9
-  - MUTE
-  - KP 6
-  - KP 5
-  - KP 4
-  - KP MULTIPLY
-  - SCROLLLOCK
-  - Ctrl
-  - ←
-  - PAGE UP
-  - PAGE DOWN
-  - Home
-  - End
-  - VOLUME DOWN
-  - KP 3
-  - KP 2
-  - KP 1
-  - KP 0
-  - {t: APP, h: Ctrl}
+  - ''
+  - ''
+  - ^
+  - _
+  - $
+  - '%'
+  - '*'
+  - '='
+  - '-'
+  - +
+  - ''
+  - ''
+  - '`'
+  - '@'
+  - ''''
+  - '"'
+  - ','
+  - ':'
+  - ;
+  - .
+  - (
+  - )
+  - '{'
+  - '}'
+  - '~'
+  - '|'
+  - \
+  - /
+  - '#'
+  - '&'
+  - '!'
+  - '?'
+  - <
+  - '>'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}

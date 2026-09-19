@@ -173,10 +173,10 @@
         raise_layer {
             display-name = "RSE";
             bindings = <
-&mt LEFT_GUI KP_NUM  &kp KP_SLASH  &kp CLCK      &kp LC(PAGE_UP)  &kp INSERT  &kp LC(PAGE_DOWN)  &kp C_VOL_UP       &kp KP_N9  &kp KP_N8  &kp KP_N7  &kp PSCRN        &kp PAUSE_BREAK
-&mt LEFT_ALT EQUAL   &kp PG_UP     &kp UP_ARROW  &kp DOWN         &kp RIGHT   &kp LA(N9)         &kp K_MUTE         &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_MULTIPLY  &kp SCROLLLOCK
-&kp LCTRL            &kp LEFT      &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME    &kp END            &kp C_VOLUME_DOWN  &kp KP_N3  &kp KP_N2  &kp KP_N1  &kp KP_N0        &mt RCTRL K_APP
-                                                 &trans           &trans      &trans             &trans             &trans     &trans
+&none      &none        &kp CARET       &kp UNDERSCORE     &kp DOLLAR  &kp PERCENT    &kp ASTERISK     &kp EQUAL     &kp MINUS             &kp PLUS               &none             &none
+&kp GRAVE  &kp AT_SIGN  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp COMMA   &kp COLON      &kp SEMICOLON    &kp PERIOD    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE
+&kp TILDE  &kp PIPE     &kp BACKSLASH   &kp SLASH          &kp HASH    &kp AMPERSAND  &kp EXCLAMATION  &kp QUESTION  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                        &trans             &trans      &trans         &trans           &trans        &trans
             >;
         };
 
