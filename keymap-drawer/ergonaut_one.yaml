@@ -44,7 +44,7 @@ layers:
   - {t: ␣, h: RSE}
   - {t: Sft+Alt+Ctrl, h: HOT}
   LWR:
-  - {t: F1, h: LEFT GUI}
+  - F1
   - F2
   - F3
   - F4
@@ -56,19 +56,19 @@ layers:
   - F10
   - F11
   - F12
-  - '&lang_slash'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: RIGHT ALT}
-  - {t: '=', h: Ctrl}
+  - SCROLLLOCK
+  - INSERT
+  - Home
+  - Page Up
+  - Page Down
+  - End
+  - {t: ▽, type: trans}
+  - ←
+  - ↑
+  - ↓
+  - '0'
+  - PRINTSCREEN
+  - Pause Break
   - '1'
   - '2'
   - '3'
@@ -78,7 +78,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - '0'
+  - →
   - {t: DELETE, h: Ctrl}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
