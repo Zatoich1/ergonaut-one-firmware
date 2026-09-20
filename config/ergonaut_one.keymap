@@ -44,10 +44,16 @@
     };
 
     macros {
+        shift_lang: shift_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT)>;
+        };
+
         lang_dollar: lang_dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(DOLLAR)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp DOLLAR &shift_lang>;
         };
 
         lang_hash: lang_hash {
