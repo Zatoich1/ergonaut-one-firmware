@@ -40,8 +40,8 @@ layers:
   - {t: ⌦, h: HOT}
   - {t: ↹, h: RSE}
   - {t: ⏎, h: LWR}
-  - {t: BACKSPACE, h: CHG}
-  - {t: ␣, h: RSE}
+  - {t: BACKSPACE, h: LWR}
+  - {t: ␣, h: CHG}
   - {t: Sft+Alt+Ctrl, h: HOT}
   LWR:
   - F1
@@ -177,26 +177,26 @@ layers:
   - Sft+Gui+Z
   - Gui+S
   - Sft+Gui+X
-  - Gui+R
-  - '`'
+  - Ctl+Page Up
+  - Ctl+Page Down
   - PREVIOUS
-  - {t: ▽, type: trans}
+  - Sft+Gui+S
   - Sft+Gui+Print Scrn
-  - {t: ▽, type: trans}
+  - Lock
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+↹
   - Ctl+Z
   - Gui+X
   - Gui+C
-  - Gui+F
-  - Ctl+Alt+INSERT
+  - Gui+Sft+LEFT ARROW
+  - Sft+Gui+→
   - ⏯
+  - Vol Down
+  - MUTE
+  - Vol Up
   - {t: ▽, type: trans}
-  - Sft+Gui+S
-  - Lock
-  - Gui+Sft+RIGHT ARROW
-  - '&lang_grave'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+Z
   - Ctl+X
@@ -204,11 +204,11 @@ layers:
   - Ctl+V
   - Ctl+Alt+DELETE
   - ⏭️
-  - ']'
-  - '&lang_dollar'
-  - '&lang_hash'
-  - '&lang_leftbracket'
-  - '&lang_rightbracket'
+  - PREVIOUS
+  - PLAY PAUSE
+  - ⏭️
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -259,47 +259,47 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   CHG:
-  - F1
-  - '&lang_backslash'
-  - F3
-  - F4
-  - F5
-  - F6
+  - ''
+  - ''
+  - ^
   - _
+  - '&lang_dollar'
+  - '&lang_prcnt'
+  - '&lang_astr'
   - '='
   - '-'
   - +
-  - F11
-  - F12
-  - '&lang_slash'
-  - '&lang_excl'
+  - ''
+  - ''
+  - '&lang_grave'
   - '&lang_at'
-  - '&lang_hash'
-  - '&lang_dollar'
-  - '&lang_prcnt'
+  - ''''
+  - '"'
+  - '&lang_comma'
+  - ':'
   - '&lang_caret'
-  - '&lang_amps'
-  - '&lang_astr'
+  - '&lang_period'
   - '&lang_lpar'
   - '&lang_rpas'
+  - '&lang_leftbracket'
   - '`'
-  - {t: '=', h: Ctrl}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
+  - '~'
+  - '|'
+  - '&lang_backslash'
+  - '&lang_slash'
+  - '&lang_hash'
+  - '&lang_amps'
+  - '&lang_excl'
+  - '?'
   - '&lang_comma'
   - '&lang_period'
-  - '['
-  - ']'
+  - '&lang_leftbracket'
+  - '&lang_rightbracket'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [37, 36, 38]
