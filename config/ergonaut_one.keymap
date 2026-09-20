@@ -8,8 +8,7 @@
 #define RSE 2
 #define BLU 3
 #define HOT 4
-#define GAM 5
-#define CHG 6
+#define CHG 5
 
 &lt {
     quick-tap-ms = <150>;
@@ -59,97 +58,97 @@
         lang_hash: lang_hash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(HASH)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp HASH &shift_lang>;
         };
 
         lang_at: lang_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(AT_SIGN)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp AT_SIGN &shift_lang>;
         };
 
         lang_excl: lang_excl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(EXCLAMATION)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp EXCLAMATION &shift_lang>;
         };
 
         lang_amps: lang_amps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(AMPERSAND)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp AMPERSAND &shift_lang>;
         };
 
         lang_astr: lang_astr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(ASTERISK)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp ASTERISK &shift_lang>;
         };
 
         lang_lpar: lang_lpar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LEFT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp LEFT_PARENTHESIS &shift_lang>;
         };
 
         lang_rpas: lang_rpas {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(RIGHT_PARENTHESIS)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp RIGHT_PARENTHESIS &shift_lang>;
         };
 
         lang_prcnt: lang_prcnt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(PERCENT)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp PERCENT &shift_lang>;
         };
 
         lang_caret: lang_caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(CARET)) &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp CARET &shift_lang>;
         };
 
         lang_comma: lang_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LCTRL)) &kp COMMA &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp COMMA &shift_lang>;
         };
 
         lang_period: lang_period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LCTRL)) &kp PERIOD &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp PERIOD &shift_lang>;
         };
 
         lang_slash: lang_slash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LCTRL)) &kp SLASH &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp SLASH &shift_lang>;
         };
 
         lang_backslash: lang_backslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LCTRL)) &kp BACKSLASH &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp BACKSLASH &shift_lang>;
         };
 
         lang_leftbracket: lang_leftbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(LCTRL)) &kp LEFT_BRACKET &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp LEFT_BRACKET &shift_lang>;
         };
 
         lang_rightbracket: lang_rightbracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(LCTRL)) &kp RIGHT_BRACKET &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp RIGHT_BRACKET &shift_lang>;
         };
 
         lang_grave: lang_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(LCTRL)) &kp GRAVE &kp LA(LS(LCTRL))>;
+            bindings = <&shift_lang &kp GRAVE &shift_lang>;
         };
     };
 
@@ -162,7 +161,7 @@
 &kp ESC    &kp BACKSLASH   &kp W           &kp E             &kp R        &kp T      &kp Y            &kp U        &kp I                &kp O            &none                    &none
 &kp SLASH  &kp Q           &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G      &kp H            &mt LCTRL J  &mt RIGHT_SHIFT K    &mt RIGHT_ALT L  &kp P                    &kp LEFT_BRACKET
 &kp Z      &mt LEFT_GUI A  &kp X           &kp C             &kp V        &kp B      &kp N            &kp M        &kp COMMA            &kp DOT          &mt RIGHT_GUI SEMICOLON  &kp SQT
-                                           &lt 4 DEL         &lt 2 TAB    &lt 1 RET  &lt 1 BACKSPACE  &lt 6 SPACE  &lt 4 LS(LA(LCTRL))
+                                           &lt 4 DEL         &lt 2 TAB    &lt 1 RET  &lt 1 BACKSPACE  &lt 5 SPACE  &lt 4 LS(LALT)
             >;
         };
 
@@ -203,16 +202,6 @@
 &kp LA(TAB)  &kp LC(Z)      &kp LG(X)  &kp LG(C)      &kp LG(LS(LEFT_ARROW))  &kp LS(LG(RIGHT))   &kp C_PP        &kp C_VOL_DN    &kp K_MUTE         &kp C_VOL_UP  &trans  &trans
 &trans       &kp LG(Z)      &kp LC(X)  &kp LC(C)      &kp LC(V)               &kp LC(LA(DELETE))  &kp C_NEXT      &kp K_PREVIOUS  &kp K_PLAY_PAUSE   &kp C_NEXT    &trans  &trans
                                        &trans         &trans                  &trans              &trans          &trans          &trans
-            >;
-        };
-
-        game_layer {
-            display-name = "GAM";
-            bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp A  &kp S  &kp D    &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp TAB  &kp SPACE  &lt 1 ENTER  &trans  &trans  &trans
             >;
         };
 
